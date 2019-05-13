@@ -1,47 +1,46 @@
-import { Order } from './Order';
+import { Order } from './order';
 
 const date = new Date();
 
 export const ORDERS_DATA_MOCK: Order[] = [
     {
         id:1,
-        name: 'Main St Bakery',
+        customer: {id: 1, name: 'Main St Bakery', email:'example@email.com',state: 'CD'},
         total: 230,
         placed: date,
-        completed: date,
+        fulfilled: date,
         status: 'Status'
     },
     {
         id:2,
-        name: 'Main St Bakery',
+        customer: {id: 1, name: 'Main St Bakery', email:'example@email.com',state: 'CD'},
         total: 230,
         placed: date,
-        completed: date,
+        fulfilled: date,
         status: 'Status'
     },
     {
         id:3,
-        name: 'Main St Bakery',
+        customer: {id: 1, name: 'Main St Bakery', email:'example@email.com',state: 'CD'},
         total: 230,
         placed: date,
-        completed: date,
+        fulfilled: date,
         status: 'Status'
     },
     {
         id:4,
-        name: 'Main St Bakery',
+        customer: {id: 1, name: 'Main St Bakery', email:'example@email.com',state: 'CD'},
         total: 230,
         placed: date,
-        completed: date,
+        fulfilled: date,
         status: 'Status'
     },
     {
         id:5,
-        name: 'Main St Bakery',
+        customer: {id: 1, name: 'Main St Bakery', email:'example@email.com',state: 'CD'},
         total: 230,
         placed: date,
-        completed: date,
+        fulfilled: date,
         status: 'Status'
     },   
 ];
-

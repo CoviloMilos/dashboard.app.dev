@@ -1,6 +1,7 @@
 import { ORDERS_DATA_MOCK } from './../../shared/orders.mock';
 import { Component, OnInit } from '@angular/core';
-import { Order } from 'src/app/shared/Order';
+import { Order } from 'src/app/shared/order';
+
 
 const ORDERS_DATA: Order[] = ORDERS_DATA_MOCK;
 

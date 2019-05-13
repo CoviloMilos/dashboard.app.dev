@@ -1,8 +1,10 @@
+import { Customer } from './customer';
+
 export interface Order {
     id: number;
-    name: string;
+    customer: Customer;
     total: number;
     placed: Date;
-    completed: Date;
-    status: 'Status';
+    fulfilled: Date;
+    status: string;
 }
