@@ -1,4 +1,4 @@
-export class Order {
+export interface Order {
     id: number;
     name: string;
     total: number;

@@ -1,4 +1,12 @@
+import { Server } from './../../shared/server';
 import { Component, OnInit } from '@angular/core';
+
+const SAMPLE_SERVERS = [
+  {id: 1, name: 'dev-web', isOnline: true},
+  {id: 1, name: 'dev-mail', isOnline: false},
+  {id: 1, name: 'prod-web', isOnline: true},
+  {id: 1, name: 'prod-mail', isOnline: true},
+];
 
 @Component({
   selector: 'app-section-health',
@@ -6,6 +14,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-health.component.css']
 })
 export class SectionHealthComponent implements OnInit {
+
+  servers: Server[] = SAMPLE_SERVERS;
 
   constructor() { }
 
