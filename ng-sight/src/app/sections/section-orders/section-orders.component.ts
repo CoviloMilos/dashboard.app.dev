@@ -1,4 +1,8 @@
+import { ORDERS_DATA_MOCK } from './../../shared/orders.mock';
 import { Component, OnInit } from '@angular/core';
+import { Order } from 'src/app/shared/Order';
+
+const ORDERS_DATA: Order[] = ORDERS_DATA_MOCK;
 
 @Component({
   selector: 'app-section-orders',
@@ -7,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionOrdersComponent implements OnInit {
 
+  public orders: Order[] = ORDERS_DATA;
+  
   constructor() { }
 
   ngOnInit() {
+    console.log(ORDERS_DATA);
   }
 
 }
