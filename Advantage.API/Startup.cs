@@ -29,9 +29,9 @@ namespace Advantage.API
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             Console.WriteLine("DefaultConnection:" + Configuration.GetConnectionString("DefaultConnection"));
-            services.AddEntityFrameworkNpgsql()
+            services.AddEntityFrameworkSqlServer()
             .AddDbContext<DataContext>(
-                    opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+                    opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
