@@ -1,0 +1,14 @@
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\bin\Debug\netcoreapp2.2\Advantage.API.deps.json
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\bin\Debug\netcoreapp2.2\Advantage.API.runtimeconfig.json
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\bin\Debug\netcoreapp2.2\Advantage.API.runtimeconfig.dev.json
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\bin\Debug\netcoreapp2.2\Advantage.API.dll
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\bin\Debug\netcoreapp2.2\Advantage.API.pdb
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.csprojAssemblyReference.cache
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.csproj.CoreCompileInputs.cache
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.RazorAssemblyInfo.cache
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.RazorAssemblyInfo.cs
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.AssemblyInfoInputs.cache
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.AssemblyInfo.cs
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.RazorTargetAssemblyInfo.cache
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.dll
+C:\Users\milos\Me\AgainMe\CoursesApps\NgSightDashboard\Advantage.API\obj\Debug\netcoreapp2.2\Advantage.API.pdb
