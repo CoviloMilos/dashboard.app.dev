@@ -128,7 +128,6 @@ namespace Advantage.API.Data
             for (var i = 0; i < nOrders; i++)
             {
                 var customers = _context.Customers.ToList();
-                Console.WriteLine("JEGENDO:" + customers[0].Id);
                 var randCustomerId = rand.Next(customers[0].Id, customers[customers.Count-1].Id);
                 var placed = SeedCustProp.GetRandomOrderPlacedSeed();
                 var completed = SeedCustProp.GetRandomOrderCompletedSeed(placed);

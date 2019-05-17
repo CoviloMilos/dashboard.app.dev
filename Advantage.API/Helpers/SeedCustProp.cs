@@ -32,7 +32,7 @@ namespace Advantage.API.Helpers
 
         internal static string MakeCustomerEmailSeed(string custname)
         {
-            return $"contact@{custname.ToLower()}.com";
+            return $"contact@{custname.Replace(" ", "").ToLower()}.com";
         }
 
         internal static string GetRadnomStateSeed()
