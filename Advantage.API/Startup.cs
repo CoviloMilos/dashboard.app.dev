@@ -30,12 +30,13 @@ namespace Advantage.API
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             Console.WriteLine("DefaultConnection:" + Configuration.GetConnectionString("DefaultConnection"));
             services.AddEntityFrameworkSqlServer()
-            .AddDbContext<DataContext>(
-                    opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                    .AddDbContext<DataContext>(
+                        opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient<DataSeed>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, DataSeed seed)
         {
             if (env.IsDevelopment())
             {
@@ -46,6 +47,8 @@ namespace Advantage.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            
+            seed.SeedData(20, 1000);
 
             app.UseHttpsRedirection();
             app.UseMvc();
