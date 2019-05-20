@@ -10,5 +10,10 @@ namespace Advantage.API.Data
         bool SaveAll();
         Customer GetCustomer(int id);
         IQueryable<Customer> GetCustomers();
+        IQueryable<Order> GetOrders();
+        Order GetOrder(int id);
+        Order CreateOrder(OrderForCreateDto orderForCreateDto);
+        IQueryable<Server> GetServers();
+        void ChangeServerStatus(int id);
     }
 }

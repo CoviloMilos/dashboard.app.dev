@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -9,11 +10,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SectionSalesComponent } from './sections/section-sales/section-sales.component';
 import { SectionOrdersComponent } from './sections/section-orders/section-orders.component';
 import { SectionHealthComponent } from './sections/section-health/section-health.component';
-import { appRoutes } from 'src/routes';
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { PieChartComponent } from './charts/pie-chart/pie-chart.component';
 import { ServerComponent } from './server/server.component';
+import { AdvantageService } from './_services/advantage.service';
+import { PaginationComponent } from './pagination/pagination.component';
+import { appRoutes } from 'src/routes';
 
 @NgModule({
   declarations: [
@@ -26,14 +29,18 @@ import { ServerComponent } from './server/server.component';
     BarChartComponent,
     LineChartComponent,
     PieChartComponent,
-    ServerComponent
+    ServerComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    ChartsModule
+    ChartsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AdvantageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

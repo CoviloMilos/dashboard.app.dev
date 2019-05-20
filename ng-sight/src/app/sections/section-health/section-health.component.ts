@@ -1,3 +1,4 @@
+import { AdvantageService } from './../../_services/advantage.service';
 import { Server } from './../../shared/server';
 import { Component, OnInit } from '@angular/core';
 
@@ -15,11 +16,22 @@ const SAMPLE_SERVERS = [
 })
 export class SectionHealthComponent implements OnInit {
 
-  servers: Server[] = SAMPLE_SERVERS;
+  servers: Server[];
 
-  constructor() { }
+  constructor(private service: AdvantageService) { }
 
   ngOnInit() {
+    this.loadServers();
+  }
+
+  loadServers() {
+    this.service.getServers()
+      .subscribe(
+        (res: Server[]) => {
+          this.servers = res
+      }, error => {
+        console.log(error);
+      });
   }
 
 }

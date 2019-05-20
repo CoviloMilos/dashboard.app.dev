@@ -1,3 +1,4 @@
+import { AdvantageService } from './../_services/advantage.service';
 import { Component, OnInit, Input } from '@angular/core';
 import { Server } from '../shared/server';
 
@@ -11,7 +12,7 @@ export class ServerComponent implements OnInit {
   color: string;
   buttonText: string;
 
-  constructor() { }
+  constructor(private advantageService: AdvantageService) { }
 
   ngOnInit() {
     this.setServerStatus(this.serverInput.isOnline);
@@ -29,9 +30,13 @@ export class ServerComponent implements OnInit {
     }
   }
 
-  toggleStatus(onlineStatus: boolean) {
+  toggleStatus(onlineStatus: boolean, id: number) {
     console.log(this.serverInput.name, ': ', onlineStatus);
-    this.setServerStatus(!onlineStatus);
+    this.advantageService.changeServerStatus(id)
+      .subscribe((res: any) => {
+        this.setServerStatus(!onlineStatus);
+      }, error => {
+        console.log(error);
+      });
   }
-
 }
